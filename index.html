@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Portfolio</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>HI!</h1>
+    <h1>I'M JEA NORENE P. ORING</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#port">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="ME.jpg" alt="ME">
+    <p>I am Jea Norene Oring, at 20 years of age, living in the charming town of Boctol, Balilihan, Philippines. I am a third-year student at Bohol Island State University. While studying a Bachelor of Science in Information Technology, I am delving into the world of code and technology.
+      With each lecture and project, I am building a foundation for a promising career. Bohol Island State University is not just where I study; it's where I shape my skills and connect with peers who share my passion.
+      Here's to my journey in information technology—may it be filled with exciting discoveries and lead me to a future brimming with success!</p>
+  </section>
+
+  <section id="port">
+    <h2>Portfolio</h2>
+  
+    <button onclick="showAll()">Show All</button>
+  
+    <div id="filter">
+      <button onclick="filterPortfolio('skills')">SKILLS</button>
+      <button onclick="filterPortfolio('interests')">INTERESTS</button>
+      <button onclick="filterPortfolio('myworks')">MY WORKS</button>
+    </div>
+  
+    <section id="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>React</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Illustrator</li>
+      </ul>
+    </section>
+  
+    <section id="interests">
+      <h3>INTERESTS</h3>
+      <ul>
+        <li>Photography</li>
+        <li>Design</li>
+        <li>Editing Picture</li>
+       
+      </ul>
+    </section>
+
+    <div id="project-gallery">
+      <h3>My Works</h3>
+      <div class="project-item mobile">
+        <img src="1.jpg" alt="Project 1">
+        <p> Graduaution Program</p>
+       
+      </div>
+      <div id="project-item mobile">
+        <div class="project-item web">
+          <img src="FRONT.gif" alt="Project 1">
+          <img src="Back.gif" alt="Project 1">
+          <p>Student Calling Card</p>
+        
+        </div>
+        <div id="project-item mobile">
+          <div class="project-item web">
+            <img src="logo.gif" alt="Project 1">
+            <p>Personal Logo</p>
+          
+          </div>
+      <div class="project-item mobile">
+        <img src="3.png" alt="Project 2">
+        <p> Flatlist Component</p>
+        
+      </div>
+      <div class="project-item mobile">
+        <img src="4.png" alt="Project 2">
+        <p> Scrollview Component</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script>
+    function showAll() {
+      document.getElementById("skills").style.display = "block";
+      document.getElementById("interests").style.display = "block";
+      document.getElementById("project-gallery").style.display = "block";
+    }
+
+    function filterPortfolio(category) {
+      showAll(); // Reset to show all sections
+
+      if (category === "skills") {
+        document.getElementById("interests").style.display = "none";
+        document.getElementById("project-gallery").style.display = "none";
+      } else if (category === "myworks") {
+        document.getElementById("skills").style.display = "none";
+        document.getElementById("interests").style.display = "none";
+      } else if (category === "interests") {
+        document.getElementById("skills").style.display = "none";
+        document.getElementById("project-gallery").style.display = "none";
+      }
+    }
+  </script>
+<footer>
+  <p>&copy; 2023 Your Name. All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

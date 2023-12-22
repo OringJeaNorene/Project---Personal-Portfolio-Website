@@ -1,0 +1,132 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3536;
+  color: #f3ddb3;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav a {
+  color: #735b69;
+  font-size: 1.1em;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+section {
+  padding: 2em;
+}
+/* Add these styles to your existing styles.css file */
+
+#about {
+  text-align: center;
+  background-color: #909090;
+}
+
+#about h2 {
+  color: #0c0908;
+}
+
+#about img {
+  max-width: 30%;
+  border-radius: 50%; /* Adds a rounded border to the image */
+  margin-bottom: 20px;
+}
+
+#about p {
+  color: #0c0908;
+  font-size: 1.1em;
+}
+
+/* You can customize the colors, sizes, and other styles based on your preferences */
+
+
+#filter button {
+  background-color: #4157;
+  color: #f3ddb3;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#port {
+  background-color: #909090;
+}
+
+.project-item {
+  margin-bottom: 20px;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+}
+/* ... (your existing styles) ... */
+
+.project-item {
+  margin-bottom: 2em;
+  text-align: left; /* Align text to the left within project items */
+}
+
+.project-item img {
+  max-width: 20%; /* Ensure images don't exceed their container width */
+  height: auto; /* Maintain image aspect ratio */
+}
+
+.project-item h3 {
+  margin-top: 0.5em; /* Add some space above the project title */
+}
+
+.project-item p {
+  margin-bottom: 1em; /* Add some space below the project description */
+}
+
+/* ... (your existing styles) ... */
+
+#contact {
+  background-color: #909090;
+}
+#contact-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#contact-form button {
+  background-color: #4157;
+  color: #f3ddb3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #3536;
+  color: #f3ddb3;
+}
